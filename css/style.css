@@ -1,0 +1,41 @@
+.headerImg{
+	grid-area: logo;
+	padding: 0 2rem;
+	height: 2.900rem;
+}
+.headernav{
+	display: flex;
+	align-items: center;
+	grid-area: navbar;
+	float: right;
+}
+
+.headernavlink{
+	text-decoration: none;
+	padding: 2rem;
+	color: cornflowerblue;
+}
+.headernavlink:hover{
+	border-top: 3px solid cornflowerblue;
+}
+
+
+.filtersbuttons{
+	display: flex;
+  	flex-wrap: wrap;
+  	align-items: center;
+}
+
+.searchfiltericon{
+	width: 35px;
+	height: 35px;
+	background-color: cornflowerblue;
+	border-radius: 35px;
+}
+.filterbutton{
+	border-top: 3px solid #ccc;
+	border-radius: 35px;
+	border-right: 3px solid #ccc;
+	border-bottom: 3px solid #ccc ;
+	background-color: transparent;
+	
