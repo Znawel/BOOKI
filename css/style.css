@@ -39,6 +39,22 @@
 	color: white;
 	font-weight: bold;
 }
+.search-button-icon{
+	display: none;
+
+}
+.search-button-text{
+	display: block;
+}
+@media screen and (max-width:992px){
+	.search-button-icon{
+	display: block;
+	
+}
+.search-button-text{
+	display: none;
+}
+}
 .header-img{
 	grid-area: logo;
 	padding: 0 2rem;
