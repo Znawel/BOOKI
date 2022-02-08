@@ -1,4 +1,16 @@
-.headerImg{
+#header{
+	display: flex;
+	justify-content: space-between;
+}
+@media screen and (max-width:992px){
+	#header{
+
+		align-items: center;
+		flex-direction: column;
+	}	
+}
+
+.header-img{
 	grid-area: logo;
 	padding: 0 2rem;
 	height: 2.900rem;
