@@ -6,6 +6,9 @@
 	<title>BOOKI - Openclassrooms</title>
 	<script src="https://kit.fontawesome.com/a025908767.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header id="header">
@@ -47,33 +50,28 @@
 			<i class="fas fa-dog search-filter-icon"></i> 
 			<span class="filter-text">Animaux acceptés</span>
 			</button>
-
 		</div>
 	</div>
 		<div class="search-result">
 			<i class="fas fa-info search-result-icon"></i>
 			plus de 500 logements sont disponibles dans cette ville
-		
 		</div>
-
 	</main>
 	
-	<div class="hostings-container">
-		<section class="hostings">
-		<h2 class="hostingtitle" id="hosting">Hébergements à Marseille</h2>
-
+	<section class="hosting" id="hosting">
+	<h2 class="hosting-title">Hébergements à Marseille</h2>
 	
 	<div class="card-hostings-container">
 	<article class="card">
 		<a href="#">
 		<div>
 			<picture>
-				<img src="img/1.jpg" alt="Auberge" width="300" height="200">
+				<img class="card-img" src="img/auberge-la-cannebière.jpg" alt="Auberge la cannebière" width="300" height="200">
 			</picture>
 		</div>
 			
-		<div class="card-title">
-			<h3>Auberge La Cannebière</h3>
+		<div class="card-body">
+			<h3 class="card-title">Auberge La Cannebière</h3>
 			<div class="card-hotel">
 			<p>Nuit à partir de 
 			<strong class="card-price">25€</strong>
@@ -98,7 +96,7 @@
 		<a href="#">
 		<div>
 			<picture>
-				<img src="img/2.jpg" alt="port" width="300" height="200">
+				<img class="card-img" src="img/hotel-du-port.jpg" alt="hotel du port" width="300" height="200">
 			</picture>
 		</div>
 			
@@ -127,7 +125,7 @@
 		<a href="#">
 		<div>
 			<picture>
-				<img src="img/3.jpg" alt="mouettes" width="300" height="200">
+				<img class="card-img" src="img/Hotel-les-mouettes.jpg" alt="hotel les mouettes" width="300" height="200">
 			</picture>
 		</div>
 			
@@ -157,7 +155,7 @@
 		<a href="#">
 		<div>
 			<picture>
-				<img src="img/4.jpg" alt="mer" width="300" height="200">
+				<img class="card-img" src="img/hotel-de-la-mer.jpg" alt="hotel de la mer" width="300" height="200">
 			</picture>
 		</div>
 			
@@ -187,7 +185,7 @@
 		<a href="#">
 		<div>
 			<picture>
-				<img src="/img/5.jpg" alt="panier" width="300" height="200">
+				<img class="card-img" src="img/auberge-le-panier.jpg" alt="auberge le panier" width="300" height="200">
 			</picture>
 		</div>
 			
@@ -217,7 +215,7 @@
 		<a href="#">
 		<div>
 			<picture>
-				<img src="img/6.jpg" alt="Amina" width="300" height="200">
+				<img class="card-img" src="img/hotel-chez-amina.jpg" alt="hotel chez Amina" width="300" height="200">
 			</picture>
 		</div>
 			
@@ -242,15 +240,14 @@
 		</a>
 	</article>
 	<div class="hostings-end">
-		<p>Afficher plus</p>
+	<a class="hosting-view-more" href="#">Afficher plus</a>
 	</div>
 </div>
-
 </section>
 
 <aside>
-	<div class="hostingpopular">
-		<h2 class="hostingpopulartitle">
+	<section id="hosting-popular">
+		<h2 class="hosting-popular-title">
 			Les plus populaires
 			<i class="fas fa-chart-line"></i>
 		</h2>
@@ -258,7 +255,7 @@
 	<a href="#">
 	<div class="popular-card">
 		<picture>
-			<img src="img/populaire1.jpg" alt="le soleil du matin" width="200" height="100">
+			<img class="card-image" src="img/hotel-le-soleil-du-matin.jpg" alt="hotel le soleil du matin" width="200" height="100">
 		</picture>
 	<div class="popular-card-title">
 			<h3>Hôtel le soleil du matin</h3>
@@ -273,7 +270,6 @@
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>	
-
 			</div>		
 		</div>
 	</div>
@@ -281,7 +277,7 @@
 <a href="#">
 	<div class="popular-card">
 		<picture>
-			<img src="img/populaire2.jpg" alt="Au coeur de l'eau Chambres d'hôtes" width="200" height="100">
+			<img class="card-image" src="img/au-coeur-de-leau.jpg" alt="hotel Au coeur de l'eau Chambres d'hôtes" width="200" height="100">
 		</picture>
 	<div class="popular-card-title">
 			<h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -309,7 +305,7 @@
 <a href="#">
 	<div class="popular-card">
 		<picture>
-			<img src="/img/populaire3.jpg" alt="bleu et blanc" width="200" height="100">
+			<img class="card-image" src="img/hotel-tout-bleu-et-blanc.jpg" alt="hotel Tout bleu et blanc" width="200" height="100">
 		</picture>
 	<div class="popular-card-title">
 			<h3>Hôtel tout bleu et blanc</h3>
@@ -336,11 +332,111 @@
 </a>
 </div>
 </div>
-</aside>
-<section>
-	
 </section>
-	
+</aside>
+<section id="activity">
+	<h2 class="activity-title">Activités à Marseille</h2>
+
+<div class="card-activity-container">
+	<article class="card">
+		<a href="#">
+		<div>
+		<picture>
+		<img class="card-picture" src="img/vieux-port.jpg" alt="le vieux port" width="300" height="200">
+		</picture>
+		</div>	
+	<div class="card-title">
+		<h3>Vieux Port</h3>
+	</div>
+	</a>
+	</article>
+	<article class="card">
+		<a href="#">
+		<div>
+		<picture>
+		<img class="card-picture" src="img/fort-de-pomègues.jpg" alt="fort de pomègues" width="300" height="200">
+		</picture>
+		</div>
+	<div class="card-title">
+	<h3>Fort de Pomègues</h3>
+	</div>
+	</a>
+	</article>
+	<article class="card">
+		<a href="#">
+		<div>
+		<picture>
+		<img class="card-picture" src="img/iles-du-frioul.jpg" alt="îles du frioul" width="300" height="200">
+		</picture>
+		</div>
+	<div class="card-title">
+	<h3>Iles du Frioul</h3>
+	</div>
+	</a>
+	</article>
+	<article class="card">
+		<a href="#">
+		<div>
+		<picture>
+		<img class="card-picture" src="img/parc-national-des-calanques.jpg" alt="parc national des Calanques" width="300" height="200">
+		</picture>
+		</div>
+	<div class="card-title">
+	<h3>Parc National des Calanques</h3>
+	</div>
+	</a>
+	</article>
+	<article class="card">
+		<a href="#">
+		<div>
+		<picture>
+		<img class="card-picture" src="img/notre-dame-de-la-garde.jpg" alt="notre dame de la garde" width="300" height="200">
+		</picture>
+		</div>
+	<div class="card-title">
+	<h3>Notre-Dame-de-la-Garde</h3>
+	</div>
+	</a>
+	</article>
+	<article class="card">
+		<a href="#">
+		<div>
+		<picture>
+		<img class="card-picture" src="img/parc-longchamp.jpg" alt="parc longchamp" width="300" height="200">
+		</picture>
+		</div>
+	<div class="card-title">
+	<h3>Parc Longchamp</h3>
+	</div>
+	</a>
+	</article>
+</div>	
+</section>
+<footer id="footer">
+<div class="footercolumn">
+<h3 class="footer-title">A propos</h3>
+<ul>
+	<li>Fonctinnement du site</li>
+	<li>Conditions générales de vente</li>
+	<li>Données et confidentialité</li>
+</ul>
+</div>
+<div class="footercolumn">
+<h3 class="footer-title">Nos hébergements</h3>
+<ul>
+	<li>Charte qualité</li>
+	<li>Soumettre votre hôtel</li>
+</ul>
+</div>
+<div class="footercolumn">
+<h3 class="footer-title">Assistance</h3>
+<ul>
+	<li>Centre d'aide</li>
+	<li>Nous contacter</li>
+</ul>
+</div>
+</footer>
 
 </body>
+
 </html>
