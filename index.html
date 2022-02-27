@@ -58,9 +58,9 @@
 		</div>
 	</main>
 	<div style="display: flex; justify-content: space-between;">
-	<section style="margin-right:30px; padding: 30px;" class="hosting" id="hosting">
-	<h2 class="hosting-title">Hébergements à Marseille</h2>
-	<div class="card-hostings-container">
+	<section class="hosting" id="hosting">
+		<h2 class="hosting-title">Hébergements à Marseille</h2>
+	<div id="card-hostings-container">
 	<article class="card">
 		<a href="#">
 		<div>
@@ -69,8 +69,8 @@
 			</picture>
 		</div>
 			
-		<div class="card-body">
-			<h3 class="card-title">Auberge La Cannebière</h3>
+		<div class="card-title">
+			<h3>Auberge La Cannebière</h3>
 			<div class="card-hotel">
 			<p>Nuit à partir de 
 			<strong class="card-price">25€</strong>
@@ -119,7 +119,6 @@
 		</div>
 		</a>
 	</article>
-
 	<article class="card">
 		<a href="#">
 		<div>
@@ -127,7 +126,6 @@
 				<img class="card-img" src="img/Hotel-les-mouettes.jpg" alt="hotel les mouettes" width="300" height="200">
 			</picture>
 		</div>
-			
 		<div class="card-title">
 			<h3>Hôtel Les Mouettes</h3>
 			<div class="card-hotel">
@@ -187,7 +185,6 @@
 				<img class="card-img" src="img/auberge-le-panier.jpg" alt="auberge le panier" width="300" height="200">
 			</picture>
 		</div>
-			
 		<div class="card-title">
 			<h3>Auberge Le Panier</h3>
 			<div class="card-hotel">
@@ -238,34 +235,30 @@
 		</div>
 		</a>
 	</article>
-	<!--<div class="hostings-end">
-	<a class="hosting-view-more" href="#">Afficher plus</a>
-	</div>-->
-</div>
 	<div class="hostings-end">
 	<a class="hosting-view-more" href="#">Afficher plus</a>
 	</div>
 </section>
-
 <aside>
-	<section id="hosting-popular">
-		<h2 class="hosting-popular-title">
-			Les plus populaires
-			<i class="fas fa-chart-line"></i>
-		</h2>
-	<div class="popular-container">
-	<a href="#">
+<section  class="hosting-popular" id="hosting-popular">
+	<h2 class="hosting-popular-title">
+	Les plus populaires
+	<i class="fas fa-chart-line pop"></i>
+	</h2>
+<article id="popular-container">
 	<div class="popular-card">
+		<a href="#">
 		<picture>
-			<img class="card-image" src="img/hotel-le-soleil-du-matin.jpg" alt="hotel le soleil du matin" width="200" height="100">
+			<img class="card-image" src="img/hotel-le-soleil-du-matin.jpg" alt="hotel le soleil du matin" width="150px">
 		</picture>
+		</a>
+	</div>
 	<div class="popular-card-title">
 			<h3>Hôtel le soleil du matin</h3>
 			<div class="popular-card-hotel">
 			<p>Nuit à partir de 
 			<strong class="popular-card-price">128€</strong>
 			</p>
-		</div>
 			<div class="stars">
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>
@@ -275,47 +268,49 @@
 			</div>		
 		</div>
 	</div>
-</a>
-<a href="#">
+</article>
+<article id="popular-container">
 	<div class="popular-card">
+		<a href="#">
 		<picture>
 			<img class="card-image" src="img/au-coeur-de-leau.jpg" alt="hotel Au coeur de l'eau Chambres d'hôtes" width="200" height="100">
 		</picture>
+		</a>
+	</div>
 	<div class="popular-card-title">
 			<h3>Au coeur de l'eau Chambres d'hôtes</h3>
 			<div class="popular-card-hotel">
 			<p>Nuit à partir de 
 			<strong class="popular-card-price">71€</strong>
 			</p>
-		</div>
 			<div class="stars">
 				<span class="bluestars">
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				
+				<i class="fas fa-star"></i>	
 				</span>
 				<span class="greystars">
 				<i class="fas fa-star"></i>
 				</span>	
-
 			</div>		
 		</div>
 	</div>
-</a>
-<a href="#">
+</article>
+<article id="popular-container">
 	<div class="popular-card">
+		<a href="#">
 		<picture>
 			<img class="card-image" src="img/hotel-tout-bleu-et-blanc.jpg" alt="hotel Tout bleu et blanc" width="200" height="100">
 		</picture>
+		</a>
+	</div>
 	<div class="popular-card-title">
 			<h3>Hôtel tout bleu et blanc</h3>
 			<div class="popular-card-hotel">
 			<p>Nuit à partir de 
 			<strong class="popular-card-price">68€</strong>
 			</p>
-		</div>
 			<div class="stars">
 				<span class="bluestars">
 				<i class="fas fa-star"></i>
@@ -331,90 +326,50 @@
 			</div>		
 		</div>
 	</div>
-</a>
-</div>
-</div>
+	</article>
 </section>
 </aside>
 </div>
+<h2 class="activity-title">Activités à Marseille</h2>
 <section id="activity">
-	<h2 class="activity-title">Activités à Marseille</h2>
-
-<div class="card-activity-container">
-	<article class="card">
-		<a href="#">
-		<div>
-		<picture>
-		<img class="card-picture" src="img/vieux-port.jpg" alt="le vieux port" width="300" height="200">
-		</picture>
-		</div>	
-	<div class="card-title">
-		<h3>Vieux Port</h3>
-	</div>
+	<div class="activity-card card1">
+		<a href="#" class="card1">
+		<img class="card-picture" src="img/vieux-port.jpg" alt="le vieux port" width="290" height="390">	
+	<h3 class="card-title">Vieux Port</h3>
 	</a>
-	</article>
-	<article class="card">
-		<a href="#">
-		<div>
-		<picture>
+	</div>
+	<div class="activity-card card2">
+		<a href="#" class="card2">
 		<img class="card-picture" src="img/fort-de-pomègues.jpg" alt="fort de pomègues" width="300" height="200">
-		</picture>
-		</div>
-	<div class="card-title">
-	<h3>Fort de Pomègues</h3>
-	</div>
+	<h3 class="card-title">Fort de Pomègues</h3>
 	</a>
-	</article>
-	<article class="card">
-		<a href="#">
-		<div>
-		<picture>
+	</div>	
+	<div class="activity-card card3">
+		<a href="#" class="card3">
 		<img class="card-picture" src="img/iles-du-frioul.jpg" alt="îles du frioul" width="300" height="200">
-		</picture>
-		</div>
-	<div class="card-title">
-	<h3>Iles du Frioul</h3>
-	</div>
+	<h3 class="card-title">Iles du Frioul</h3>
 	</a>
-	</article>
-	<article class="card">
-		<a href="#">
-		<div>
-		<picture>
-		<img class="card-picture" src="img/parc-national-des-calanques.jpg" alt="parc national des Calanques" width="300" height="200">
-		</picture>
-		</div>
-	<div class="card-title">
-	<h3>Parc National des Calanques</h3>
-	</div>
+	</div>	
+	<div class="activity-card card4">
+		<a href="#" class="card4">
+		<img class="card-picture" src="img/parc-national-des-calanques.jpg" alt="parc national des Calanques" width="290" height="390">
+	<h3 class="card-title">Parc National des Calanques</h3>
 	</a>
-	</article>
-	<article class="card">
-		<a href="#">
-		<div>
-		<picture>
+	</div>	
+	<div class="activity-card card5">
+		<a href="#" class="card5">
 		<img class="card-picture" src="img/notre-dame-de-la-garde.jpg" alt="notre dame de la garde" width="300" height="200">
-		</picture>
-		</div>
-	<div class="card-title">
-	<h3>Notre-Dame-de-la-Garde</h3>
-	</div>
+	<h3 class="card-title">Notre-Dame-de-la-Garde</h3>
 	</a>
-	</article>
-	<article class="card">
-		<a href="#">
-		<div>
-		<picture>
+	</div>
+	<div class="activity-card card6">
+		<a href="#" class="card6">
 		<img class="card-picture" src="img/parc-longchamp.jpg" alt="parc longchamp" width="300" height="200">
-		</picture>
-		</div>
-	<div class="card-title">
-	<h3>Parc Longchamp</h3>
-	</div>
+	<h3 class="card-title">Parc Longchamp</h3>
 	</a>
-	</article>
-</div>	
+	</div>		
 </section>
+
 <footer id="footer">
 <div class="footercolumn">
 <h3 class="footer-title">A propos</h3>
