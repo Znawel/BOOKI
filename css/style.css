@@ -366,7 +366,7 @@ ul{
 		align-items:flex-start;
 	}	
 }
-@media screen and (max-width : 768px){
+@media screen and (min-width: 768px) and (max-width : 992px){
 	.headernavlink:hover{
 		border-bottom: 3px solid #0065fc;
 		border-top: none ;
@@ -422,12 +422,13 @@ ul{
 		flex-direction:row;
 		align-items: flex-start;
 		background: none;
+		justify-content: center;
 	}	
 	.hosting a{
-		width: 330px;
+		width: 320px;
 	}
 	.hosting-card-img{
-		width: 330px;
+		width: 320px;
 	}
 	#hosting-popular{
 		flex-direction: column;
