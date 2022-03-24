@@ -16,8 +16,8 @@
 	<header id="header">
 		<img class="header-img" src="img/logo.png" alt="BOOKI">
 		<nav class="headernav">
-			<a class="headernavlink" href="#hosting">Hébergements</a>
-			<a class="headernavlink" href="#activity">Activités</a>
+			<a class="headernavlink" href="#hosting" data-active="true">Hébergements</a>
+			<a class="headernavlink" href="#activity" data-active="false">Activités</a>
 		</nav>
 	</header>
 	<main>
@@ -57,18 +57,19 @@
 			<p>
 			<i class="fas fa-info search-result-icon"></i>
 			</p>
-			<p>plus de 500 logements sont disponibles dans cette ville</p>
+			<p>Plus de 500 logements sont disponibles dans cette ville</p>
 		</div>
 	</main>
 	<div id="container">
 		<!--Hébergements-->
 		<section class="hosting" id="hosting">
 			<h2 class="hosting-title">Hébergements à Marseille</h2>
+			<div class="hosting-cards">
 			<a href="#">
 				<img class="hosting-card-img" src="img/auberge-la-cannebière.png" alt="Auberge la cannebière">
 				<div class="card-title">
 					<h3>Auberge La Cannebière</h3>
-					<p>Nuit à partir de<strong>25€</strong></p>
+					<p>Nuit à partir de 25<strong>€</strong></p>
 					<div class="cardstars">
 						<i class="fas fa-star bluestars"></i>
 						<i class="fas fa-star bluestars"></i>
@@ -124,7 +125,7 @@
 				<img class="hosting-card-img" src="img/auberge-le-panier.jpg" alt="auberge le panier">
 				<div class="card-title">
 					<h3>Auberge Le Panier</h3>
-					<p>Nuit à partir de<strong>23€</strong></p>
+					<p>Nuit à partir de 23<strong>€</strong></p>
 					<div class="cardstars">
 						<i class="fas fa-star bluestars"></i>
 						<i class="fas fa-star bluestars"></i>
@@ -148,7 +149,9 @@
 					</div>
 				</div>
 			</a>
+			
 			<h4 class="hosting-view-more">Afficher plus</h4>
+			</div>
 		</section>
 		<!--Les plus populaires-->
 		<section class="hosting-popular" id="hosting-popular">

@@ -11,8 +11,8 @@ body {
 	justify-content: space-between;
 }
 .header-img{
-	padding: 0 30px;
-	height: 50px;
+	padding: 0 15px;
+	height: 60px;
 }
 .headernav{
 	display: flex;
@@ -22,10 +22,11 @@ body {
 .headernavlink{
 	text-decoration: none;
 	padding: 30px;
-	color: #0065fc;
+	color: black;
 }
-.headernavlink:hover{
-	border-top: 3px solid #0065fc;
+.headernav a[data-active="true"] {
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
 }
 /*search*/
 #search{
@@ -68,6 +69,7 @@ body {
 /*Les filtres*/
 .filters{
 	font-weight: bold;
+	font-size: 20px;
 }
 .filters-buttons{
 	display: flex;
@@ -79,6 +81,7 @@ body {
 	padding: 10px;
 	border-radius: 30px;
 	color: #0065fc;
+	font-size: 30px;
 }
 .filter-button{
 	display: flex;
@@ -87,23 +90,25 @@ body {
 	border-radius: 30px;
 	background: transparent;
 	align-items: center;
-	border: 1px solid #ccc;
+	border: 1px solid #d9d9d9;
 	padding: 0%;
 }
 .filter-button:hover{
 	transform: scale(1.2);
 }
 .filter-text{
-	padding-left: 10px;
-	padding-right: 10px;
+	
+	padding: 10px 10px 10px 10px;
+	font-size: 20px;
+	font-style: bold;
 }
 #search-filters{
 	display: flex;
-	margin-top: 15px;
+	margin-top: 30px;
 	align-items: center;
 }	
 .search-result{
-	margin-top: 30px;
+	margin-top: 20x;
 	display: flex;
 	align-items:baseline;
 }
@@ -114,39 +119,46 @@ body {
 	height: 20px;
 	width: 20px;
 	text-align: center;
-	margin-right: 15px;
+	margin-right: 10px;
 	margin-bottom: 15px;
 	padding: 5px 5px 5px 5px;
 	font-size: 15px;
+}
+.search-input::placeholder{
+	color: black;
+	opacity: 1;
 }
 /*Hebergements*/
 #container{
 	display: flex;
     flex-direction: row;
-    padding-left: 0;
 	justify-content: space-between;
 }
 #hosting{
 	display: flex;
     flex-wrap: wrap;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    margin-right: 15px;
-    max-width: 810px;
-	padding-left: 25px;
-	padding-right: 25px;
+	background-color: #f2f2f2;
+	width: 940px;
+	border-radius: 20px;
+}
+.hosting-cards{
+	display: flex;
+    flex-wrap: wrap;
+	padding: 0 20px 20px 20px;
 }
 .hosting-title{
 	width: 100%;
-    padding-left: 25px;
+    padding-left: 35px;
+	margin-bottom: 0px;
+	margin-top: 30px;
 }
-.hosting a{
-	margin: 10px;
+.hosting-cards a{
+	margin: 0 20px 20px 20px;
     height: fit-content;
 	text-decoration: none;
     color: black;
     border-radius: 25px;
-    width: 240px;
+    width: 250px;
 	background-color: #fff;
     box-shadow: -1px 2px 27px 0px rgb(189 189 189 / 65%);
     padding: 5px;
@@ -158,10 +170,11 @@ body {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	width: 100%;
-    height: 120px;
+    height: 130px;
+	object-fit: cover;
 }
 .hosting-view-more{
-	padding-left: 15px;
+	padding-left: 35px;
 }
 .bluestars{
 	color: #0065fc;
@@ -173,18 +186,24 @@ body {
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
+.card-title h3,
+.card-title p{
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
 /*Les plus popolaires*/
 #hosting-popular{
 	border-radius: 20px;
     background-color: #f2f2f2;
     padding: 10px;
 	display: block;
+	margin-left: 25px;
 }
 .popular-card-container a{
 	text-decoration: none;
     color: black;
     border-radius: 25px;
-    height: 120px;
+    height: 150px;
     display: flex;
     background-color: #fff;
     margin-bottom: 25px;
@@ -211,16 +230,18 @@ body {
 }
 .stars{
 	display: flex;
+	padding-top: 15px;
 }
 .popular-card-img{
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 	height: 100%;
 	width: 150px;
+	object-fit: cover;
 }
 .popular-card{
 	padding-left: 15px;
-    width: auto;
+    width: 200px;
 }
 /*Activités*/
 #activity{
@@ -231,6 +252,7 @@ body {
 .activity-card-img{
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
+	object-fit: cover;
 }
 .activity-card a{
 	text-decoration: none;
@@ -278,10 +300,11 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background: #F2F2F2;
-	padding-right: 400px;
+	padding:  25px 400px 25px 25px;
 }
 li{
 	list-style: none;
+	margin: 15px 15px 15px 0;
 }
 ul{
 	display: block;
@@ -293,12 +316,18 @@ ul{
 }
 /*media queries*/
 @media screen and (min-width: 280px) and (max-width: 992px){
-	.headernavlink:hover{
-		border-bottom: 3px solid #0065fc;
-		border-top: none ;
+	.headernav a[data-active="true"] {
+		border-bottom: 3px solid #0065FC;
+		color: #0065FC;
+		border-top: none;
+	}
+	.headernav a[data-active="false"] {
+		border-bottom: 3px solid #d9d9d9;
+		color: black;
 	}
 	main h1{
 		margin-left: 20px;
+		font-size: 26px;
 	}
 	main p{
 		margin-left: 20px;
@@ -310,7 +339,12 @@ ul{
 		margin-left: 20px;
 	}
 	.search-result{
-		margin-left: 20px;
+		margin-left: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.search-result p{
+		margin: 0;
 	}
 	#header{
 
@@ -325,6 +359,10 @@ ul{
 	}
 	.search-result-icon{
 		margin-right: 5px;
+		margin-left: 10px;
+	}
+	.search-button{
+		border-radius: 20px;
 	}
 	#search{
 		width: 50px;	
@@ -334,6 +372,16 @@ ul{
 	}
 	.filter-button{
 		margin-bottom: 10px;
+	}
+	.search-filter-icon{
+		font-size: 25px;
+	}
+	.filters{
+		margin-bottom: 15px;
+	}
+	.filter-text{
+			font-weight: bold;
+			font-size: 18px;
 	}
 	body{
 		padding: 0;
@@ -355,8 +403,19 @@ ul{
 		padding-left: 0;
     	padding-right: 0;
 		margin-right: 0;
+		width: auto;
+	}
+	.hosting-cards{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+	}
+	.hosting-cards a{
+		margin: 0 0 15px 0;
 	}
 	.hosting-title{
+		margin-bottom: 15px;
+		width: auto;
 		padding-left: 0;
 	}	
 	.hosting-card-img{
@@ -368,24 +427,37 @@ ul{
 		height: 100%;
 		margin-left: 0;	
 	}
+	.hosting-view-more{
+		padding-left: 15px;
+	}
 	#hosting-popular{
 		flex-direction: column;
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		justify-content: center;
+		margin-left: 0;
 	}	
 	.popular-card-container{
-		margin-right: 20px;
+		margin: 0;
+	}
+	.popular-card-container a{
+		margin-top: 5px;
+		margin-bottom: 5px;
 	}
 	.popular-card{
-		font-size: 14px;
 		justify-content: center;
 	}
+	.popular-card p{
+		font-size: 16px;
+		margin-bottom: 20px;
+		margin-top: 5px;
+	}
 	.popular-card-title{
-		font-size: 15px;
+		font-size: 18px;
+		margin-bottom: 2px;
 	}
 	#activity{
-		margin: 20px;
+		margin: 0;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -395,6 +467,14 @@ ul{
 	.activity-card-img{
 		width:350px;
 		height: 150px;	
+	}
+	.card1,
+	.card4{
+		margin-bottom: 15px;
+	}
+	.card3,
+	.card6{
+		margin-top: 15px;
 	}
 	#footer{
 		flex-direction: column;
